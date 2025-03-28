@@ -12,6 +12,44 @@
 
 header {
     font-family: var(--text-font),sans-serif;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+header img{
+    grid-column: 2/3;
+}
+
+header nav{
+    grid-column: 4/8; 
+}
+.menu {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+.menu li{
+    flex: 1 1 auto;
+}
+
+.menu a{
+    display: block;
+	color: var(--primary-color);
+	padding: 20px;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.menu a:hover {
+	color: var(--accent1-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 h1 {
@@ -43,7 +81,7 @@ p {
     top: 20px;
     text-align: center;
     width: 100%;
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
     font-size: 5em;
 }
 
@@ -55,7 +93,7 @@ p {
     width: 75%;
     padding: 20px;
     font-size: 1.5rem;
-    background-color: rgb(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5);
 
 }
 
@@ -70,9 +108,50 @@ section{
     clear: both;
 }
 
-section img {
+.history img {
     width: 600px;
     height: 400px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+}
+
+.history h2{
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.adventure{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+
+.adventure h2{
+    grid-column: span 5;
+    justify-self: center;
+}
+
+.adventure figure img{
+    max-width: fit-content;
+    width: 150px;
+    height: auto;
+}
+
+.adventure figcaption{
+    font-family: var(--text-font),sans-serif;
+    text-align: center;
+}
+
+.sociallinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .sociallinks a{
