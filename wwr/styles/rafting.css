@@ -41,7 +41,7 @@ header nav{
 
 .menu a{
     display: block;
-	color: var(--primary-color);
+	color: black;
 	padding: 20px;
 	text-decoration: none;
 	font-size: 1.2rem;
@@ -59,7 +59,7 @@ h1 {
 
 h2 {
     font-family: var(--heading-font), Helvetica, sans-serif;
-    color: var(--accent2-color)
+    color: var(--accent1-color)
 }
 
 p {
@@ -156,4 +156,84 @@ section{
 
 .sociallinks a{
     text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 250px;
+    background-color: #0095b648;
+    border-radius: 0.5rem;
+    
+
+}
+
+.contact p{
+    font-family: var(--heading-font), Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact iframe{
+    border-radius: .5rem;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team img {
+    height: 400px;
+    width: auto;
+    border: 5px solid var(--accent2-color);
+    border-radius: 0.5rem;
+}
+
+.team figcaption{
+    font-family: var(--heading-font), Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+form{
+    font-family: var(--text-font);
+    
+}
+
+fieldset{
+    border: 5px solid var(--accent1-color);
+    border-radius: .5rem;
+    font-size: 1.1em;
+}
+
+fieldset legend{
+    font-size: 1.5em
+}
+
+fieldset p{
+    font-size: 1.2em;
+}
+
+.message textarea{
+    width: 600px;
+    height: 200px;
+}
+
+button {
+    margin: 1rem;
+    background-color: #dddddd;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    border-radius: .3rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    color: #fff;
+    background-color: var(--accent1-color);
 }

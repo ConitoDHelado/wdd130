@@ -29,18 +29,68 @@
     </header>
     <main>
         <section class="contact">
-            <address>
-                Visit us at:<br>
-                1234 N Lane St.<br>
-                Gilbert, AZ 85142<br>
-                (123) 456-7890
+            <p>
+                Visit us at:<br><br>
+                3 Triad Center, Suite 500 1125<br>
+                Salt Lake City, UT 84180<br><br>
+                (801) 353-1400<br>
                 info@wwr.com
-            </address>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7168.399228887702!2d-111.9034523235842!3d40.77111653399393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f5aa65687281%3A0x8f5cb1a018407710!2sBYU-Pathway%20Worldwide!5e1!3m2!1ses!2ses!4v1744045599661!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="team">
+            <figure>
+                <img src="images/employee_1.webp" alt="img1">
+                <figcaption>Mary<br>Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee_2.webp" alt="img2">
+                <figcaption>Martha<br>Trips</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee_3.webp" alt="img3">
+                <figcaption>Lazarus<br>Legal Team</figcaption>
+            </figure>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div class="form-item name">
+                    <input type="text" id="fullname" name="fullname" placeholder="Name">
+                </div>
+                <div class="form-item email">
+                    <input type="text" id="email" name="email" placeholder="E-mail Address">
+                </div>
+                <p>Purpose of message:</p>
+                <div class="form-item radio">
+                    <input type="radio" id="general-inquiry" name="general-inquiry">
+                    <label for="general-inquiry">General inquiry</label>
+                </div>    
+                <div class="form-item radio">
+                    <input type="radio" id="reservation" name="reservation">
+                    <label for="reservation">Reservation question</label>
+                </div>    
+                <div class="form-item radio">
+                    <input type="radio" id="suggestion" name="suggestion">
+                    <label for="suggestion">Website suggestion</label>
+                </div>
+                <div class="form-item message">
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="form-item checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send message</button>  
+            </fieldset>
+              
+                
+        </form>
     </main>
     <footer>
         <nav class="sociallinks">
             <p>&copy;2025 | Rafting Adventures | Efraín Pérez Delgado</p>
+            <a href="https://tinyurl.com/58c8s5pf">Wireframe</a>
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook" width="50">
             </a>
