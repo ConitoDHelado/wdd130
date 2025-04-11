@@ -54,7 +54,8 @@ header nav{
 
 h1 {
     font-family: var(--heading-font), Helvetica, sans-serif;
-    color: var(--primary-color)
+    color: var(--accent1-color);
+    text-align: center;
 }
 
 h2 {
