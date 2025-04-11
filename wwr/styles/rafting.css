@@ -222,6 +222,10 @@ fieldset p{
     font-size: 1.2em;
 }
 
+.message{
+    display: grid;
+}
+
 .message textarea{
     width: 600px;
     height: 200px;
